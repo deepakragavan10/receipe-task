@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --nutmeg: hsl(14, 45%, 36%);
+      --dark-raspberry: hsl(332, 51%, 32%);
+      --rose-white: hsl(330, 100%, 98%);
+      --eggshell: hsl(30, 54%, 90%);
+      --light-grey: hsl(30, 18%, 87%);
+      --wenge-brown: hsl(30, 10%, 34%);
+      --dark-charcoal: hsl(24, 5%, 18%);
+      --white: hsl(0, 0%, 100%);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--eggshell);
+      font-family: 'Outfit', sans-serif;
+      color: var(--wenge-brown);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    main {
+      max-width: 720px;
+      margin: auto;
+      background-color: var(--white);
+      border-radius: 20px;
+      padding: 2rem;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-family: 'Young Serif', serif;
+      color: var(--dark-charcoal);
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-family: 'Young Serif', serif;
+      color: var(--nutmeg);
+      margin: 2rem 0 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .prep {
+      background-color: var(--rose-white);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin: 2rem 0;
+    }
+
+    .prep h3 {
+      color: var(--dark-raspberry);
+      margin-bottom: 1rem;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--light-grey);
+      margin: 2rem 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    table tr {
+      border-bottom: 1px solid var(--light-grey);
+    }
+
+    table td {
+      padding: 0.75rem 0;
+    }
+
+    table td:last-child {
+      color: var(--nutmeg);
+      font-weight: 700;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <img src="./assets/images/image-omelette.jpeg" alt="Simple Omelette">
+
+    <h1>Simple Omelette Recipe</h1>
+
+    <p>
+      An easy and quick dish, perfect for any meal. This classic omelette
+      combines beaten eggs cooked to perfection, optionally filled with your
+      choice of cheese, vegetables, or meats.
+    </p>
+
+    <section class="prep">
+      <h3>Preparation time</h3>
+      <ul>
+        <li><strong>Total:</strong> Approximately 10 minutes</li>
+        <li><strong>Preparation:</strong> 5 minutes</li>
+        <li><strong>Cooking:</strong> 5 minutes</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Ingredients</h2>
+      <ul>
+        <li>2–3 large eggs</li>
+        <li>Salt, to taste</li>
+        <li>Pepper, to taste</li>
+        <li>1 tablespoon of butter or oil</li>
+        <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Instructions</h2>
+      <ol>
+        <li><strong>Beat the eggs:</strong> Beat eggs with salt and pepper.</li>
+        <li><strong>Heat the pan:</strong> Add butter or oil over medium heat.</li>
+        <li><strong>Cook the omelette:</strong> Pour eggs and spread evenly.</li>
+        <li><strong>Add fillings:</strong> Add fillings when eggs start setting.</li>
+        <li><strong>Fold and serve:</strong> Fold and cook for another minute.</li>
+        <li><strong>Enjoy:</strong> Serve hot.</li>
+      </ol>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Nutrition</h2>
+      <p>The table below shows nutritional values per serving.</p>
+
+      <table>
+        <tr>
+          <td>Calories</td>
+          <td>277kcal</td>
+        </tr>
+        <tr>
+          <td>Carbs</td>
+          <td>0g</td>
+        </tr>
+        <tr>
+          <td>Protein</td>
+          <td>20g</td>
+        </tr>
+        <tr>
+          <td>Fat</td>
+          <td>22g</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Deepak Ragavan</a>.
+  </footer>
+
+</body>
+</html>
